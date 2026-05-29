@@ -1,15 +1,15 @@
 # Hi there, I'm Vivek! 👋
 
-Hi! I'm a 3rd-year B.Tech student at DA-IICT with a strong passion for Generative AI and Machine Learning. I’m deeply enthusiastic about technology and continuously seek opportunities to learn, build innovative solutions, and contribute to impactful projects. I'm driven by curiosity and a desire to turn ideas into reality through code and collaboration.
+Hi! I'm Vivek Chaudhari, a B.Tech student at DA-IICT with a strong passion for Generative AI and Machine Learning. I enjoy exploring new technologies, building practical projects, and contributing to impactful work through collaboration and continuous learning.
 
 ---
 
 ## 📖 About Me
 
-- 🌱 I’m currently learning **new technologies and frameworks** to expand my skill set.
-- 💼 Working on **personal and collaborative projects** that solve real-world problems.
-- 🚀 Interested in **open-source contributions** and building innovative solutions.
-- 🎯 Focused on improving my skills in **full-stack development**, **machine learning**, and **cloud technologies**.
+- 🌱 I’m currently learning **advanced GenAI, backend architecture, and cloud-native tools**.
+- 💼 Building **personal and collaborative projects** that solve real-world problems.
+- 🚀 Actively interested in **open-source contributions** and developer communities.
+- 🎯 Focused on growing in **full-stack engineering**, **machine learning**, and **scalable systems**.
 
 ---
 
