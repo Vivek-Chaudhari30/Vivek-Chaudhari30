@@ -1,42 +1,103 @@
-# Hi there, I'm Vivek! 👋
+# Hi, I'm Vivek 👋
 
-Hi! I'm Vivek Chaudhari, a B.Tech student at DA-IICT with a strong passion for Generative AI and Machine Learning. I enjoy exploring new technologies, building practical projects, and contributing to impactful work through collaboration and continuous learning.
+Most companies run on open loops. Decisions get made, context gets lost, and teams spend hours reconstructing why things happened.
 
----
+I'm building systems that close those loops.
 
-## 📖 About Me
+Currently, I'm part of the founding team at **Context AI**, where we're building the strategic intelligence layer for organizations — helping teams capture, preserve, and leverage company knowledge, decision-making context, and institutional memory.
 
-- 🌱 I’m currently learning **advanced GenAI, backend architecture, and cloud-native tools**.
-- 💼 Building **personal and collaborative projects** that solve real-world problems.
-- 🚀 Actively interested in **open-source contributions** and developer communities.
-- 🎯 Focused on growing in **full-stack engineering**, **machine learning**, and **scalable systems**.
+Alongside that, I'm the Founder of **Quantum AI Solutions**, an applied AI company building LLM-powered systems, AI agents, voice AI, automation pipelines, and enterprise AI solutions for businesses and government organizations.
 
----
-
-## 🛠️ Technologies & Tools
-
-- **Languages:** JavaScript, Python, Java, C++
-- **Frontend:** React, Angular, HTML, CSS
-- **Backend:** Node.js, Express, Django
-- **Databases:** MySQL, MongoDB, PostgreSQL
-- **DevOps:** Docker
-- **Cloud:** AWS, Azure, Google Cloud
-- **Others:** Git, GitHub Actions, REST APIs
+I'm pursuing a B.Tech in ICT at DA-IICT and will be joining **UC Berkeley Engineering's Applied AI program ('26)**.
 
 ---
 
-## 📊 GitHub Stats
+## 🚀 What I'm Working On
 
-![Vivek's GitHub stats](https://github-readme-stats.vercel.app/api?username=Vivek-Chaudhari30&show_icons=true&hide=prs,issues&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vivek-Chaudhari30&layout=compact&theme=radical)
+* Building organizational intelligence systems at Context AI
+* Designing AI agents and multi-agent workflows
+* Developing enterprise-grade LLM applications
+* Exploring memory systems, knowledge graphs, and AI infrastructure
+* Scaling applied AI solutions through Quantum AI Solutions
+
+---
+
+## 🏗️ Areas of Interest
+
+* Artificial Intelligence
+* Agentic Systems
+* Organizational Memory & Context Infrastructure
+* Knowledge Graphs
+* Reinforcement Learning
+* Distributed Systems
+* Human-AI Collaboration
+* Voice AI & Conversational Interfaces
 
 ---
 
-## 🔗 Let's Connect!
+## 🛠 Tech Stack
 
-[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vivek-Chaudhari30)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/____Vivek_)
+**Languages**
 
+* Python
+* TypeScript
+* JavaScript
+* Java
+* C++
+
+**AI & ML**
+
+* OpenAI
+* Anthropic
+* LangGraph
+* LangChain
+* RAG Systems
+* Vector Databases
+* Multi-Agent Architectures
+
+**Backend**
+
+* Node.js
+* Express
+* FastAPI
+* Django
+* PostgreSQL
+* MongoDB
+
+**Cloud & Infrastructure**
+
+* AWS
+* Azure
+* Google Cloud
+* Docker
+* GitHub Actions
+
+**Frontend**
+
+* React
+* Next.js
+* Angular
 
 ---
+
+## 🌍 Current Focus
+
+Building the infrastructure layer that helps organizations remember, reason, and make better decisions.
+
+---
+
+## 📫 Connect With Me
+
+* [LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/)
+* [GitHub](https://github.com/Vivek-Chaudhari30)
+* [X (Twitter)](https://x.com/____Vivek_)
+
+---
+
+> Building systems that help organizations think.
+>
+> Founding Team @ Context AI  
+> Founder @ Quantum AI Solutions  
+> Incoming UC Berkeley Applied AI '26
+>
+> Interested in organizational intelligence, agentic systems, AI infrastructure, and the future of human-AI collaboration.
