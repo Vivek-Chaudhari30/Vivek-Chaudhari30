@@ -2,7 +2,7 @@
 
 Applied AI engineer and founder, building systems that help organizations remember, reason, and decide.
 
-[LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/) · [GitHub](https://github.com/Vivek-Chaudhari30) · [X](https://x.com/____Vivek_)
+[LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/) · [GitHub](https://github.com/Vivek-Chaudhari30) · [X](https://x.com/@Chaudhar1Vivek)
 
 ---
 
