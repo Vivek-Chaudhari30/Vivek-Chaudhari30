@@ -28,7 +28,6 @@ Most companies run on open loops: decisions get made, context gets lost, and tea
 - **[Majoor](https://github.com/Vivek-Chaudhari30/my_majoor)** — Voice-first macOS menu-bar assistant. Hold Ctrl+Option, speak, and it transcribes, picks an action and gets it done. <sub>Swift · ★ 1 · updated Jun 2026</sub>
 - **[Project Nexus](https://github.com/Vivek-Chaudhari30/Project_Nexus)** — Multi-agent orchestration that plans goals into a DAG, routes sub-tasks across LLMs, executes code in a sandbox and reflects until quality passes. <sub>Python · updated Apr 2026</sub>
 - **[Human Turn](https://github.com/Vivek-Chaudhari30/HumanTurn)** — Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you. <sub>TypeScript · updated Aug 2026</sub>
-- **[Postgres → Iceberg CDC](https://github.com/Vivek-Chaudhari30/olake-postgres-iceberg-spark)** — One-command Postgres CDC to Apache Iceberg with OLake and a REST catalog, verified in Spark, PyIceberg and DuckDB. <sub>Python · updated Oct 2026</sub>
 <!-- FEATURED:END -->
 
 ## Education
@@ -96,7 +95,7 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
 - [RL-Reasoning-team18](https://github.com/Vivek-Chaudhari30/RL-Reasoning-team18) <sub>· Oct 20, 2026</sub>
 - [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) <sub>· Oct 16, 2026</sub>
-- [olake-postgres-iceberg-spark](https://github.com/Vivek-Chaudhari30/olake-postgres-iceberg-spark) — Postgres to Apache Iceberg with OLake CDC and a REST catalog, verified in Spark, PyIceber… <sub>· Oct 12, 2026</sub>
+- [Vivek-Chaudhari30.github.io](https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30.github.io) — Personal portfolio of Vivek Chaudhari, AI software engineer <sub>· Oct 7, 2026</sub>
 
 **Latest pull requests to other projects**
 
@@ -108,5 +107,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 1, 2026, 7:41 PM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/41368470538">run log</a></sub>
+<sub>Stats refresh automatically via GitHub Actions. Last successful refresh: <b>Nov 1, 2026, 8:00 PM EST</b></sub>
 <!-- LAST-UPDATED:END -->

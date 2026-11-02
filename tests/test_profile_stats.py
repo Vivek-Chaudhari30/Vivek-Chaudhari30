@@ -160,6 +160,11 @@ class RenderTests(unittest.TestCase):
         self.assertNotIn("[me]", out)
         self.assertLess(out.index("[alpha]"), out.index("[beta]"))
 
+    def test_activity_exclude_repos(self):
+        out = render.render_activity(sample_data(), recent=5, tz=TZ, exclude_repos=["Alpha"])
+        self.assertNotIn("[alpha]", out)
+        self.assertIn("[beta]", out)
+
     def test_updated_stamp_in_local_time(self):
         out = render.render_updated(NOW, TZ, None, None)
         self.assertIn("Nov 1, 2026, 9:37 AM EST", out)

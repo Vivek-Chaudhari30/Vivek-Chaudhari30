@@ -65,7 +65,9 @@ def build_sections(data: ProfileData, config: dict, now: datetime) -> tuple[dict
         sections["FEATURED"] = featured
         warnings += featured_warnings
     if needs("repos", "search"):
-        sections["ACTIVITY"] = render.render_activity(data, activity_cfg.get("recent_repos", 5), tz)
+        sections["ACTIVITY"] = render.render_activity(
+            data, activity_cfg.get("recent_repos", 5), tz, activity_cfg.get("exclude_repos", [])
+        )
     if not failed:
         server = os.getenv("GITHUB_SERVER_URL", "https://github.com")
         repo = os.getenv("GITHUB_REPOSITORY")

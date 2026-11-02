@@ -147,8 +147,9 @@ def _truncate(text: str, limit: int = 90) -> str:
     return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
 
 
-def render_activity(data: ProfileData, recent: int, tz: ZoneInfo) -> str:
-    repos = [r for r in original_repos(data) if r.pushed_at]
+def render_activity(data: ProfileData, recent: int, tz: ZoneInfo, exclude_repos: list[str] = ()) -> str:
+    skip = {name.lower() for name in exclude_repos}
+    repos = [r for r in original_repos(data) if r.pushed_at and r.name.lower() not in skip]
     repos.sort(key=lambda r: r.pushed_at, reverse=True)
     lines = ["**Recently pushed**", ""]
     for repo in repos[:recent]:

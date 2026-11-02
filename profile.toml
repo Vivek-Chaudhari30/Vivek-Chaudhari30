@@ -20,6 +20,8 @@ note = "Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter N
 [activity]
 # Number of recently pushed repositories to list.
 recent_repos = 5
+# Repositories never listed under Recent Activity.
+exclude_repos = ["olake-postgres-iceberg-spark"]
 
 # Featured projects, in display order. Descriptions are hand-written from each
 # repository's README; language, stars and last push date come from the API.
@@ -47,8 +49,3 @@ description = "Multi-agent orchestration that plans goals into a DAG, routes sub
 repo = "HumanTurn"
 name = "Human Turn"
 description = "Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you."
-
-[[featured]]
-repo = "olake-postgres-iceberg-spark"
-name = "Postgres → Iceberg CDC"
-description = "One-command Postgres CDC to Apache Iceberg with OLake and a REST catalog, verified in Spark, PyIceberg and DuckDB."
