@@ -55,9 +55,9 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 36 original public repos
-Commits, all-time        390   public, since 2023
-Commits, 2026            343   Jan 1 – Nov 1
-Commits, last 12 months  344   rolling window
+Commits, all-time        391   public, since 2023
+Commits, 2026            344   Jan 1 – Nov 1
+Commits, last 12 months  345   rolling window
 Pull requests             43   34 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
@@ -107,5 +107,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via GitHub Actions. Last successful refresh: <b>Nov 1, 2026, 8:00 PM EST</b></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 1, 2026, 8:00 PM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/41370161626">run log</a></sub>
 <!-- LAST-UPDATED:END -->
