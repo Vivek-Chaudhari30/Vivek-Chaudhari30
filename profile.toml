@@ -1,0 +1,54 @@
+# Configuration for the README stats generator (python -m profile_stats).
+# Everything outside the <!-- NAME:START --> / <!-- NAME:END --> markers in
+# README.md is hand-written and never touched by the generator.
+
+username = "Vivek-Chaudhari30"
+timezone = "America/New_York"
+
+[languages]
+# How many languages to show in the distribution chart.
+top = 8
+# Repositories left out of the language totals. Both commit a full Python
+# virtualenv (venv/) -- ~12 MB and ~87 MB of vendored third-party packages
+# (incl. NumPy/SciPy C++ and Cython) that would otherwise dominate the chart.
+exclude_repos = ["Corporatify", "Ghostwire"]
+# Notebook files are mostly JSON cell outputs and embedded images, not code.
+exclude_languages = ["Jupyter Notebook"]
+# Shown under the chart so the exclusions are transparent.
+note = "Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output."
+
+[activity]
+# Number of recently pushed repositories to list.
+recent_repos = 5
+
+# Featured projects, in display order. Descriptions are hand-written from each
+# repository's README; language, stars and last push date come from the API.
+# A repository that is missing or not public is skipped with a warning.
+[[featured]]
+repo = "Paged_Serve"
+name = "PagedServe"
+description = "From-scratch LLM inference server: paged KV cache, continuous batching, block-aligned prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API."
+
+[[featured]]
+repo = "GRPO-Zero"
+description = "Hand-written GRPO for verifiable math reasoning. LoRA-trained Qwen2.5-0.5B from 42.76% to 47.16% pass@1 on the full GSM8K test set."
+
+[[featured]]
+repo = "my_majoor"
+name = "Majoor"
+description = "Voice-first macOS menu-bar assistant. Hold Ctrl+Option, speak, and it transcribes, picks an action and gets it done."
+
+[[featured]]
+repo = "Project_Nexus"
+name = "Project Nexus"
+description = "Multi-agent orchestration that plans goals into a DAG, routes sub-tasks across LLMs, executes code in a sandbox and reflects until quality passes."
+
+[[featured]]
+repo = "HumanTurn"
+name = "Human Turn"
+description = "Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you."
+
+[[featured]]
+repo = "olake-postgres-iceberg-spark"
+name = "Postgres → Iceberg CDC"
+description = "One-command Postgres CDC to Apache Iceberg with OLake and a REST catalog, verified in Spark, PyIceberg and DuckDB."

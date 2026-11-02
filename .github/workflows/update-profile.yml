@@ -1,0 +1,60 @@
+name: Update profile README
+
+on:
+  schedule:
+    # Every day at 9:37 AM New York time; the timezone field handles EST/EDT.
+    - cron: "37 9 * * *"
+      timezone: "America/New_York"
+  # Refresh after every push to main. Commits this workflow pushes with
+  # GITHUB_TOKEN do not trigger new runs, so there is no loop.
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: update-profile-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write # push the regenerated README
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # The generator uses only the Python standard library: nothing to install.
+      - name: Run tests
+        run: python -m unittest discover -s tests -t . -v
+
+      - name: Regenerate README statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m profile_stats
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh profile stats"
+          if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+            git rebase --abort
+            echo "::warning::main moved during the run and README conflicted; the newer push will trigger its own refresh."
+            exit 0
+          fi
+          git push origin "HEAD:${GITHUB_REF_NAME}"
