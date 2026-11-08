@@ -55,10 +55,10 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 36 original public repos
-Commits, all-time        391   public, since 2023
-Commits, 2026            344   Jan 1 – Nov 7
-Commits, last 12 months  345   rolling window
-Pull requests             43   34 merged, all-time
+Commits, all-time        392   public, since 2023
+Commits, 2026            345   Jan 1 – Nov 8
+Commits, last 12 months  346   rolling window
+Pull requests             44   35 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
 Contributed to             1   other people's public repos (recent)
@@ -99,13 +99,13 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 
 **Latest pull requests to other projects**
 
-- [fix(desktop): keep the composer draft when a send is refused](https://github.com/nuphos/nuphos/pull/841) in `nuphos/nuphos` <sub>open · Oct 23, 2026</sub>
+- [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) in `nuphos/nuphos` <sub>merged · Nov 7, 2026</sub>
+- [fix(desktop): keep the composer draft when a send is refused](https://github.com/nuphos/nuphos/pull/841) in `nuphos/nuphos` <sub>closed · Oct 23, 2026</sub>
 - [Sql files added](https://github.com/jash0803/financial-asset-recommendation/pull/2) in `jash0803/financial-asset-recommendation` <sub>open · Apr 10, 2025</sub>
-- [Updated customer data and added questionnaire app](https://github.com/jash0803/financial-asset-recommendation/pull/1) in `jash0803/financial-asset-recommendation` <sub>open · Apr 10, 2025</sub>
 <!-- ACTIVITY:END -->
 
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 7, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/42382552512">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 8, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/42490827150">run log</a></sub>
 <!-- LAST-UPDATED:END -->
