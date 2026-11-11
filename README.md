@@ -55,10 +55,10 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 36 original public repos
-Commits, all-time        403   public, since 2023
-Commits, 2026            356   Jan 1 – Nov 10
-Commits, last 12 months  357   rolling window
-Pull requests             45   36 merged, all-time
+Commits, all-time        404   public, since 2023
+Commits, 2026            357   Jan 1 – Nov 11
+Commits, last 12 months  358   rolling window
+Pull requests             46   37 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
 Contributed to             2   other people's public repos (recent)
@@ -99,13 +99,13 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 
 **Latest pull requests to other projects**
 
+- [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) in `nuphos/nuphos` <sub>merged · Nov 10, 2026</sub>
 - [Bank/vivek sim](https://github.com/zaccytoymas/Sundai-hack/pull/1) in `zaccytoymas/Sundai-hack` <sub>merged · Nov 8, 2026</sub>
 - [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) in `nuphos/nuphos` <sub>merged · Nov 7, 2026</sub>
-- [fix(desktop): keep the composer draft when a send is refused](https://github.com/nuphos/nuphos/pull/841) in `nuphos/nuphos` <sub>closed · Oct 23, 2026</sub>
 <!-- ACTIVITY:END -->
 
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 10, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/42836157274">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 11, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43040446060">run log</a></sub>
 <!-- LAST-UPDATED:END -->
