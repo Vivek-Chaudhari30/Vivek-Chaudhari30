@@ -56,7 +56,7 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 ```text
 Stars earned               6   across 36 original public repos
 Commits, all-time        404   public, since 2023
-Commits, 2026            357   Jan 1 – Nov 11
+Commits, 2026            357   Jan 1 – Nov 12
 Commits, last 12 months  358   rolling window
 Pull requests             46   37 merged, all-time
 Issues opened              0   all-time
@@ -94,7 +94,7 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 - [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Oct 29, 2026</sub>
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
 - [RL-Reasoning-team18](https://github.com/Vivek-Chaudhari30/RL-Reasoning-team18) <sub>· Oct 20, 2026</sub>
-- [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) <sub>· Oct 16, 2026</sub>
+- [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Oct 16, 2026</sub>
 - [Vivek-Chaudhari30.github.io](https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30.github.io) — Personal portfolio of Vivek Chaudhari, AI software engineer <sub>· Oct 7, 2026</sub>
 
 **Latest pull requests to other projects**
@@ -107,5 +107,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 11, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43040446060">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 12, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43239294420">run log</a></sub>
 <!-- LAST-UPDATED:END -->
