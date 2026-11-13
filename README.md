@@ -23,7 +23,7 @@ Most companies run on open loops: decisions get made, context gets lost, and tea
 ## Featured Projects
 
 <!-- FEATURED:START -->
-- **[PagedServe](https://github.com/Vivek-Chaudhari30/Paged_Serve)** — From-scratch LLM inference server: paged KV cache, continuous batching, block-aligned prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API. <sub>Python · updated Oct 2026</sub>
+- **[PagedServe](https://github.com/Vivek-Chaudhari30/Paged_Serve)** — From-scratch LLM inference server: paged KV cache, continuous batching, block-aligned prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API. <sub>Python · updated Nov 2026</sub>
 - **[GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero)** — Hand-written GRPO for verifiable math reasoning. LoRA-trained Qwen2.5-0.5B from 42.76% to 47.16% pass@1 on the full GSM8K test set. <sub>Python · updated Oct 2026</sub>
 - **[Majoor](https://github.com/Vivek-Chaudhari30/my_majoor)** — Voice-first macOS menu-bar assistant. Hold Ctrl+Option, speak, and it transcribes, picks an action and gets it done. <sub>Swift · ★ 1 · updated Jun 2026</sub>
 - **[Project Nexus](https://github.com/Vivek-Chaudhari30/Project_Nexus)** — Multi-agent orchestration that plans goals into a DAG, routes sub-tasks across LLMs, executes code in a sandbox and reflects until quality passes. <sub>Python · updated Apr 2026</sub>
@@ -55,13 +55,13 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 36 original public repos
-Commits, all-time        404   public, since 2023
-Commits, 2026            357   Jan 1 – Nov 12
-Commits, last 12 months  358   rolling window
-Pull requests             46   37 merged, all-time
+Commits, all-time        405   public, since 2023
+Commits, 2026            358   Jan 1 – Nov 13
+Commits, last 12 months  359   rolling window
+Pull requests             48   37 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
-Contributed to             2   other people's public repos (recent)
+Contributed to             3   other people's public repos (recent)
 Followers                 13
 ```
 
@@ -91,21 +91,21 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 <!-- ACTIVITY:START -->
 **Recently pushed**
 
+- [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Nov 12, 2026</sub>
 - [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Oct 29, 2026</sub>
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
 - [RL-Reasoning-team18](https://github.com/Vivek-Chaudhari30/RL-Reasoning-team18) <sub>· Oct 20, 2026</sub>
-- [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Oct 16, 2026</sub>
 - [Vivek-Chaudhari30.github.io](https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30.github.io) — Personal portfolio of Vivek Chaudhari, AI software engineer <sub>· Oct 7, 2026</sub>
 
 **Latest pull requests to other projects**
 
+- [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) in `AgriciDaniel/claude-seo` <sub>open · Nov 12, 2026</sub>
 - [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) in `nuphos/nuphos` <sub>merged · Nov 10, 2026</sub>
 - [Bank/vivek sim](https://github.com/zaccytoymas/Sundai-hack/pull/1) in `zaccytoymas/Sundai-hack` <sub>merged · Nov 8, 2026</sub>
-- [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) in `nuphos/nuphos` <sub>merged · Nov 7, 2026</sub>
 <!-- ACTIVITY:END -->
 
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 12, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43239294420">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 13, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43444640696">run log</a></sub>
 <!-- LAST-UPDATED:END -->
