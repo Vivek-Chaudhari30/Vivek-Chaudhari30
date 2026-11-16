@@ -24,7 +24,7 @@ Most companies run on open loops: decisions get made, context gets lost, and tea
 
 <!-- FEATURED:START -->
 - **[PagedServe](https://github.com/Vivek-Chaudhari30/Paged_Serve)** — From-scratch LLM inference server: paged KV cache, continuous batching, block-aligned prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API. <sub>Python · updated Nov 2026</sub>
-- **[GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero)** — Hand-written GRPO for verifiable math reasoning. LoRA-trained Qwen2.5-0.5B from 42.76% to 47.16% pass@1 on the full GSM8K test set. <sub>Python · updated Oct 2026</sub>
+- **[GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero)** — Hand-written GRPO for verifiable math reasoning. LoRA-trained Qwen2.5-0.5B from 42.76% to 47.16% pass@1 on the full GSM8K test set. <sub>Python · updated Nov 2026</sub>
 - **[Majoor](https://github.com/Vivek-Chaudhari30/my_majoor)** — Voice-first macOS menu-bar assistant. Hold Ctrl+Option, speak, and it transcribes, picks an action and gets it done. <sub>Swift · ★ 1 · updated Jun 2026</sub>
 - **[Project Nexus](https://github.com/Vivek-Chaudhari30/Project_Nexus)** — Multi-agent orchestration that plans goals into a DAG, routes sub-tasks across LLMs, executes code in a sandbox and reflects until quality passes. <sub>Python · updated Apr 2026</sub>
 - **[Human Turn](https://github.com/Vivek-Chaudhari30/HumanTurn)** — Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you. <sub>TypeScript · updated Aug 2026</sub>
@@ -54,10 +54,10 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 
 <!-- PROFILE-STATS:START -->
 ```text
-Stars earned               6   across 36 original public repos
-Commits, all-time        406   public, since 2023
-Commits, 2026            359   Jan 1 – Nov 15
-Commits, last 12 months  360   rolling window
+Stars earned               6   across 37 original public repos
+Commits, all-time        409   public, since 2023
+Commits, 2026            362   Jan 1 – Nov 16
+Commits, last 12 months  363   rolling window
 Pull requests             48   38 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
@@ -72,18 +72,18 @@ Followers                 13
 
 <!-- LANGUAGES:START -->
 ```text
-TypeScript  ██████████▌░░░░░░░░░░░░░░   41.9%
-Python      ████████▋░░░░░░░░░░░░░░░░   34.4%
-Swift       █▌░░░░░░░░░░░░░░░░░░░░░░░    6.1%
-JavaScript  █▍░░░░░░░░░░░░░░░░░░░░░░░    5.6%
-CSS         █░░░░░░░░░░░░░░░░░░░░░░░░    4.1%
-HTML        ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.6%
-Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.7%
-C++         ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.5%
-Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.1%
+TypeScript  ██████████░░░░░░░░░░░░░░░   39.9%
+Python      █████████▍░░░░░░░░░░░░░░░   37.6%
+Swift       █▌░░░░░░░░░░░░░░░░░░░░░░░    5.8%
+JavaScript  █▍░░░░░░░░░░░░░░░░░░░░░░░    5.4%
+CSS         █░░░░░░░░░░░░░░░░░░░░░░░░    3.9%
+HTML        ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.4%
+Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.6%
+C++         ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.4%
+Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.0%
 ```
 
-<sub>By bytes of code across 34 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
+<sub>By bytes of code across 35 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
 <!-- LANGUAGES:END -->
 
 ## Recent Activity
@@ -91,11 +91,11 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 <!-- ACTIVITY:START -->
 **Recently pushed**
 
+- [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 15, 2026</sub>
+- [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Nov 15, 2026</sub>
 - [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Nov 12, 2026</sub>
-- [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Oct 29, 2026</sub>
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
 - [RL-Reasoning-team18](https://github.com/Vivek-Chaudhari30/RL-Reasoning-team18) <sub>· Oct 20, 2026</sub>
-- [Vivek-Chaudhari30.github.io](https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30.github.io) — Personal portfolio of Vivek Chaudhari, AI software engineer <sub>· Oct 7, 2026</sub>
 
 **Latest pull requests to other projects**
 
@@ -107,5 +107,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 15, 2026, 9:39 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43725498357">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 16, 2026, 9:49 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43889747716">run log</a></sub>
 <!-- LAST-UPDATED:END -->
