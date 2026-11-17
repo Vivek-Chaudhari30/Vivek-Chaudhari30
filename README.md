@@ -55,9 +55,9 @@ Agentic systems · Organizational memory and context · Knowledge graphs · Rein
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 37 original public repos
-Commits, all-time        409   public, since 2023
-Commits, 2026            362   Jan 1 – Nov 16
-Commits, last 12 months  363   rolling window
+Commits, all-time        412   public, since 2023
+Commits, 2026            365   Jan 1 – Nov 17
+Commits, last 12 months  366   rolling window
 Pull requests             48   38 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
@@ -72,14 +72,14 @@ Followers                 13
 
 <!-- LANGUAGES:START -->
 ```text
-TypeScript  ██████████░░░░░░░░░░░░░░░   39.9%
-Python      █████████▍░░░░░░░░░░░░░░░   37.6%
-Swift       █▌░░░░░░░░░░░░░░░░░░░░░░░    5.8%
-JavaScript  █▍░░░░░░░░░░░░░░░░░░░░░░░    5.4%
-CSS         █░░░░░░░░░░░░░░░░░░░░░░░░    3.9%
-HTML        ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.4%
+Python      ██████████▏░░░░░░░░░░░░░░   40.5%
+TypeScript  █████████▌░░░░░░░░░░░░░░░   38.0%
+Swift       █▍░░░░░░░░░░░░░░░░░░░░░░░    5.6%
+JavaScript  █▎░░░░░░░░░░░░░░░░░░░░░░░    5.1%
+CSS         ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.7%
+HTML        ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.3%
 Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.6%
-C++         ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.4%
+C++         ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.3%
 Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.0%
 ```
 
@@ -91,7 +91,7 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 <!-- ACTIVITY:START -->
 **Recently pushed**
 
-- [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 15, 2026</sub>
+- [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 16, 2026</sub>
 - [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Nov 15, 2026</sub>
 - [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Nov 12, 2026</sub>
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
@@ -107,5 +107,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 ---
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 16, 2026, 9:49 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/43889747716">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 17, 2026, 9:39 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44105426724">run log</a></sub>
 <!-- LAST-UPDATED:END -->
