@@ -31,6 +31,8 @@ min_stars = 10
 max_rows = 6
 include_closed = false
 exclude_repos = []
+# SVG card with the combined star count, regenerated on every refresh.
+card = "assets/open-source-stars.svg"
 
 # Featured projects, in display order. Descriptions are hand-written from each
 # repository's README; language, stars and last push date come from the API.

@@ -44,13 +44,13 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if git diff --quiet -- README.md; then
+          if [ -z "$(git status --porcelain -- README.md assets)" ]; then
             echo "README unchanged; nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets
           git commit -m "chore: refresh profile stats"
           if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
             git rebase --abort

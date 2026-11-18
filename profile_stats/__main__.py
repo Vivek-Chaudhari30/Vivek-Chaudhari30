@@ -77,6 +77,7 @@ def build_sections(data: ProfileData, config: dict, now: datetime) -> tuple[dict
             max_rows=oss_cfg.get("max_rows", 6),
             exclude_repos=oss_cfg.get("exclude_repos", []),
             include_closed=oss_cfg.get("include_closed", False),
+            card_path=oss_cfg.get("card"),
         )
     if not failed:
         server = os.getenv("GITHUB_SERVER_URL", "https://github.com")
@@ -85,6 +86,21 @@ def build_sections(data: ProfileData, config: dict, now: datetime) -> tuple[dict
         run_url = f"{server}/{repo}/actions/runs/{os.environ['GITHUB_RUN_ID']}" if repo and os.getenv("GITHUB_RUN_ID") else None
         sections["LAST-UPDATED"] = render.render_updated(now, tz, workflow_url, run_url)
     return sections, warnings
+
+
+def build_files(data: ProfileData, config: dict) -> dict[str, str]:
+    """Return {relative path: content} for generated asset files (the stars card)."""
+    oss_cfg = config.get("open_source", {})
+    card = oss_cfg.get("card")
+    if not card or "search" in data.errors:
+        return {}
+    prs = render.select_open_source(
+        data.external_prs or [],
+        oss_cfg.get("min_stars", 0),
+        oss_cfg.get("exclude_repos", []),
+        oss_cfg.get("include_closed", False),
+    )
+    return {card: render.render_stars_card(prs)} if prs else {}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -119,14 +135,26 @@ def main(argv: list[str] | None = None) -> int:
         print(f"error: {exc}", file=sys.stderr)
         return 1
 
-    if updated == original:
+    base = args.readme.parent
+    changed_files = {}
+    for rel, content in build_files(data, config).items():
+        path = base / rel
+        if not path.exists() or path.read_text(encoding="utf-8") != content:
+            changed_files[path] = content
+
+    if updated == original and not changed_files:
         print("README already up to date.")
         return 0
     if args.check:
         print("README is out of date.")
         return 2
-    args.readme.write_text(updated, encoding="utf-8")
-    print(f"Updated sections: {', '.join(sections)}")
+    for path, content in changed_files.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+        print(f"Wrote {path}")
+    if updated != original:
+        args.readme.write_text(updated, encoding="utf-8")
+        print(f"Updated sections: {', '.join(sections)}")
     return 0
 
 

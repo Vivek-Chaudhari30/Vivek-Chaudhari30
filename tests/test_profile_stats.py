@@ -11,7 +11,7 @@ from email.message import Message
 from zoneinfo import ZoneInfo
 
 from profile_stats import render
-from profile_stats.__main__ import build_sections
+from profile_stats.__main__ import build_files, build_sections
 from profile_stats.github_api import GitHubClient, GitHubError
 from profile_stats.readme import MarkerError, replace_block
 from profile_stats.stats import Contributions, ExternalPR, ProfileData, Repo, collect, fetch_contributions
@@ -191,23 +191,26 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(render.fmt_stars(30426), "30.4k")
         self.assertEqual(render.fmt_stars(2000), "2k")
 
+    OSS = [
+        pr("big/seo", stars=30426, title="fix: PDF | reports", when="2026-11-13T00:00:00Z"),
+        pr("team/bots", stars=687, when="2026-11-08T00:00:00Z"),
+        pr("team/bots", stars=687, when="2026-11-10T00:00:00Z"),
+        pr("team/bots", state="CLOSED", stars=687, title="refused"),
+        pr("friend/class", stars=2, title="class project"),
+        pr("team/open", state="OPEN", stars=50, when="2026-11-15T00:00:00Z"),
+    ]
+
     def test_open_source_filters_and_sorts(self):
         data = sample_data()
-        data.external_prs = [
-            pr("big/seo", stars=30426, title="fix: PDF | reports", when="2026-11-13T00:00:00Z"),
-            pr("team/bots", stars=687, when="2026-11-08T00:00:00Z"),
-            pr("team/bots", stars=687, when="2026-11-10T00:00:00Z"),
-            pr("team/bots", state="CLOSED", stars=687, title="refused"),
-            pr("friend/class", stars=2, title="class project"),
-            pr("team/open", state="OPEN", stars=50, when="2026-11-15T00:00:00Z"),
-        ]
-        out = render.render_open_source(data, TZ, min_stars=10)
-        self.assertIn("**3 merged PRs** into **2 projects**", out)
-        self.assertIn("**31.1k★** combined", out)
+        data.external_prs = list(self.OSS)
+        out = render.render_open_source(data, TZ, min_stars=10, card_path="assets/card.svg")
+        self.assertIn('<img src="assets/card.svg" alt="31.1k combined stars across 2', out)
         self.assertNotIn("refused", out)
         self.assertNotIn("class project", out)
         self.assertIn("fix: PDF \\| reports", out)
-        self.assertIn("🟡 Open", out)
+        self.assertIn("img.shields.io/github/stars/big/seo", out)
+        self.assertIn("badge/open-238636", out)
+        self.assertIn("badge/merged-8957e5", out)
         self.assertLess(out.index("team/open"), out.index("big/seo"))
         self.assertIn("-user%3Ame", out)
 
@@ -215,11 +218,24 @@ class RenderTests(unittest.TestCase):
         data = sample_data()
         data.external_prs = [pr(f"o/r{i}") for i in range(10)]
         out = render.render_open_source(data, TZ, max_rows=4)
-        self.assertEqual(out.count("| [o/r"), 4)
-        self.assertIn("**10 merged PRs**", out)
+        self.assertEqual(out.count("| [**o/r"), 4)
+        self.assertNotIn("<img src=\"assets", out)  # no card unless configured
         data.external_prs = [pr("o/r", state="CLOSED")]
         self.assertIn("No open-source", render.render_open_source(data, TZ))
-        self.assertIn("| [o/r]", render.render_open_source(data, TZ, include_closed=True))
+        self.assertIn("| [**o/r**]", render.render_open_source(data, TZ, include_closed=True))
+
+    def test_stars_card_counts_distinct_merged_projects(self):
+        prs = render.select_open_source(self.OSS, min_stars=10)
+        svg = render.render_stars_card(prs)
+        self.assertTrue(svg.startswith("<svg"))
+        self.assertIn(">31.1K</text>", svg)
+        self.assertIn(">3</text>", svg)  # merged PRs (open and closed excluded)
+        self.assertIn(">2</text>", svg)  # distinct projects
+        self.assertIn("seo ★30.4k · bots ★687", svg)
+
+    def test_shield_escapes_dashes_and_spaces(self):
+        url = render.shield("a-b c_d", "fff", label="x")
+        self.assertIn("/badge/x-a--b_c__d-fff?style=flat-square", url)
 
     def test_updated_stamp_in_local_time(self):
         out = render.render_updated(NOW, TZ, None, None)
@@ -242,6 +258,14 @@ class BuildSectionsTests(unittest.TestCase):
         sections, warnings = build_sections(data, self.CONFIG, NOW)
         self.assertEqual(set(sections), {"LANGUAGES", "FEATURED", "ACTIVITY"})
         self.assertTrue(any("search" in w for w in warnings))
+        self.assertEqual(build_files(data, {"open_source": {"card": "c.svg"}}), {})
+
+    def test_build_files_writes_card_only_when_configured(self):
+        data = sample_data()
+        data.external_prs = [pr("o/r")]
+        self.assertEqual(build_files(data, self.CONFIG), {})
+        files = build_files(data, {"open_source": {"card": "assets/c.svg"}})
+        self.assertEqual(list(files), ["assets/c.svg"])
 
 
 class ClientTests(unittest.TestCase):

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import html
 from datetime import datetime, timezone
-from urllib.parse import quote_plus
+from urllib.parse import quote, quote_plus
 from zoneinfo import ZoneInfo
 
 from .stats import ExternalPR, ProfileData, Repo
@@ -188,6 +188,30 @@ def _cell(text: str) -> str:
     return html.escape(text).replace("|", "\\|")
 
 
+def _shield_text(text: str) -> str:
+    """Escape text for a shields.io static badge path segment."""
+    return quote(text.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="")
+
+
+def shield(message: str, color: str, label: str | None = None, **params: str) -> str:
+    parts = ([_shield_text(label)] if label is not None else []) + [_shield_text(message), color]
+    query = "&".join(f"{key}={quote(value, safe='')}" for key, value in {"style": "flat-square", **params}.items())
+    return f"https://img.shields.io/badge/{'-'.join(parts)}?{query}"
+
+
+_STATUS_BADGE = {
+    "MERGED": ("merged", "8957e5"),
+    "OPEN": ("open", "238636"),
+    "CLOSED": ("closed", "6e7681"),
+}
+
+
+def all_prs_url(login: str) -> str:
+    return "https://github.com/search?type=pullrequests&q=" + quote_plus(
+        f"author:{login} is:pr is:public -user:{login}"
+    )
+
+
 def render_open_source(
     data: ProfileData,
     tz: ZoneInfo,
@@ -195,46 +219,101 @@ def render_open_source(
     max_rows: int = 6,
     exclude_repos: list[str] = (),
     include_closed: bool = False,
+    card_path: str | None = None,
 ) -> str:
     prs = select_open_source(data.external_prs or [], min_stars, exclude_repos, include_closed)
     if not prs:
         return "_No open-source contributions to show yet._"
 
-    merged = [pr for pr in prs if pr.state == "MERGED"]
-    merged_projects = {pr.repo: pr.repo_stars for pr in merged}
-    all_prs = (
-        "https://github.com/search?type=pullrequests&q="
-        + quote_plus(f"author:{data.login} is:pr is:public -user:{data.login}")
-    )
-    summary = []
-    if merged:
-        plural = "s" if len(merged) != 1 else ""
-        projects = "s" if len(merged_projects) != 1 else ""
-        summary.append(f"**{len(merged)} merged PR{plural}** into **{len(merged_projects)} project{projects}**")
-        stars = sum(merged_projects.values())
-        if stars:
-            summary.append(f"**{fmt_stars(stars)}★** combined")
-    summary.append(f"[all pull requests →]({all_prs})")
+    lines = []
+    if card_path:
+        summary = open_source_summary(prs)
+        alt = (
+            f"{fmt_stars(summary['stars'])} combined stars across {summary['projects']} open-source "
+            f"projects with {summary['merged']} merged pull requests"
+        )
+        lines += [f'<a href="{all_prs_url(data.login)}"><img src="{card_path}" alt="{html.escape(alt)}" width="100%"></a>', ""]
 
-    status_label = {"MERGED": "✅ Merged", "OPEN": "🟡 Open", "CLOSED": "Closed"}
-    lines = [
-        " · ".join(summary),
-        "",
-        "| Project | Contribution | Status |",
-        "|---|---|---|",
-    ]
+    lines += ["| Project | Contribution | Status |", "|---|---|---|"]
     for pr in prs[:max_rows]:
         when = pr.merged_at or pr.created_at
-        stars = f" <sub>★ {fmt_stars(pr.repo_stars)}</sub>" if pr.repo_stars else ""
-        status = status_label.get(pr.state, pr.state.title())
-        if when:
-            status += f" <sub>{fmt_date(when, tz)}</sub>"
-        lines.append(
-            f"| [{_cell(pr.repo)}]({pr.repo_url}){stars} "
-            f"| [{_cell(_truncate(pr.title, 80))}]({pr.url}) "
-            f"| {status} |"
+        stars_badge = (
+            f"https://img.shields.io/github/stars/{pr.repo}"
+            "?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f"
         )
+        project = (
+            f"[**{_cell(pr.repo)}**]({pr.repo_url})<br>"
+            f'<a href="{pr.repo_url}/stargazers"><img src="{stars_badge}" alt="{fmt_stars(pr.repo_stars)} stars"></a>'
+        )
+        text, color = _STATUS_BADGE.get(pr.state, (pr.state.lower(), "6e7681"))
+        status = f'<img src="{shield(text, color, logo="git", logoColor="white")}" alt="{text}">'
+        if when:
+            status += f"<br><sub>{fmt_date(when, tz)}</sub>"
+        lines.append(f"| {project} | [{_cell(_truncate(pr.title, 80))}]({pr.url}) | {status} |")
+    lines += ["", f"<sub>[All my pull requests to other projects →]({all_prs_url(data.login)})</sub>"]
     return "\n".join(lines)
+
+
+def open_source_summary(prs: list[ExternalPR]) -> dict:
+    merged = [pr for pr in prs if pr.state == "MERGED"]
+    projects: dict[str, int] = {}
+    for pr in merged:
+        projects[pr.repo] = pr.repo_stars
+    top = sorted(projects.items(), key=lambda item: -item[1])
+    return {"merged": len(merged), "projects": len(projects), "stars": sum(projects.values()), "top": top}
+
+
+_STAR_PATH = (
+    "M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 "
+    "1.4-8.168L.132 9.21l8.2-1.192z"
+)
+
+
+def render_stars_card(prs: list[ExternalPR]) -> str:
+    """A self-contained SVG card with the combined star count as the hero number."""
+    summary = open_source_summary(prs)
+    stars = fmt_stars(summary["stars"]).upper()
+    top = " · ".join(
+        f"{name.split('/')[-1]} ★{fmt_stars(count)}" for name, count in summary["top"][:2]
+    )
+    top = html.escape(_truncate(top, 34))
+    merged, projects = summary["merged"], summary["projects"]
+    pr_word = "merged PR" if merged == 1 else "merged PRs"
+    project_word = "project" if projects == 1 else "projects"
+    label = html.escape(f"{stars} combined stars across {projects} {project_word}, {merged} {pr_word}")
+    font = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" viewBox="0 0 860 190" role="img" aria-label="{label}">
+  <title>{label}</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2128"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe680"/>
+      <stop offset="1" stop-color="#f5a623"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.55" r="0.45">
+      <stop offset="0" stop-color="#f5c518" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#f5c518" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="859" height="189" rx="16" fill="url(#bg)" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="859" height="189" rx="16" fill="url(#glow)"/>
+  <g font-family="{font}">
+    <text x="36" y="42" fill="#8b949e" font-size="13" font-weight="700" letter-spacing="2.5">OPEN SOURCE IMPACT</text>
+    <path d="{_STAR_PATH}" transform="translate(34 60) scale(2.9)" fill="url(#gold)"/>
+    <text x="120" y="129" fill="url(#gold)" font-size="84" font-weight="800" letter-spacing="-2">{stars}</text>
+    <text x="36" y="166" fill="#c9d1d9" font-size="15">combined GitHub stars on projects I've shipped merged code to</text>
+    <line x1="572" y1="34" x2="572" y2="156" stroke="#30363d"/>
+    <text x="650" y="82" fill="#f0f6fc" font-size="40" font-weight="800" text-anchor="end">{merged}</text>
+    <text x="664" y="80" fill="#8b949e" font-size="16">{pr_word}</text>
+    <text x="650" y="132" fill="#f0f6fc" font-size="40" font-weight="800" text-anchor="end">{projects}</text>
+    <text x="664" y="130" fill="#8b949e" font-size="16">{project_word}</text>
+    <text x="604" y="166" fill="#8b949e" font-size="12">{top}</text>
+  </g>
+</svg>
+"""
 
 
 def render_updated(now: datetime, tz: ZoneInfo, workflow_url: str | None, run_url: str | None) -> str:
