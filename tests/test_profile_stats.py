@@ -14,7 +14,7 @@ from profile_stats import render
 from profile_stats.__main__ import build_sections
 from profile_stats.github_api import GitHubClient, GitHubError
 from profile_stats.readme import MarkerError, replace_block
-from profile_stats.stats import Contributions, ProfileData, Repo, collect, fetch_contributions
+from profile_stats.stats import Contributions, ExternalPR, ProfileData, Repo, collect, fetch_contributions
 
 NOW = datetime(2026, 11, 1, 14, 37, tzinfo=timezone.utc)
 TZ = ZoneInfo("America/New_York")
@@ -63,6 +63,20 @@ def repo(name, stars=0, fork=False, languages=None, pushed="2026-10-01T00:00:00Z
         pushed_at=datetime.fromisoformat(pushed.replace("Z", "+00:00")),
         primary_language=next(iter(languages or {}), None),
         languages=languages or {},
+    )
+
+
+def pr(repo, state="MERGED", stars=100, title="Fix things", when="2026-10-10T00:00:00Z"):
+    at = datetime.fromisoformat(when.replace("Z", "+00:00"))
+    return ExternalPR(
+        title=title,
+        url=f"https://github.com/{repo}/pull/1",
+        state=state,
+        repo=repo,
+        created_at=at,
+        merged_at=at if state == "MERGED" else None,
+        repo_url=f"https://github.com/{repo}",
+        repo_stars=stars,
     )
 
 
@@ -165,6 +179,48 @@ class RenderTests(unittest.TestCase):
         self.assertNotIn("[alpha]", out)
         self.assertIn("[beta]", out)
 
+    def test_activity_lists_only_repos(self):
+        data = sample_data()
+        data.external_prs = [pr("other/proj")]
+        out = render.render_activity(data, recent=5, tz=TZ)
+        self.assertNotIn("other/proj", out)
+        self.assertTrue(out.startswith("- [alpha]"))
+
+    def test_fmt_stars(self):
+        self.assertEqual(render.fmt_stars(687), "687")
+        self.assertEqual(render.fmt_stars(30426), "30.4k")
+        self.assertEqual(render.fmt_stars(2000), "2k")
+
+    def test_open_source_filters_and_sorts(self):
+        data = sample_data()
+        data.external_prs = [
+            pr("big/seo", stars=30426, title="fix: PDF | reports", when="2026-11-13T00:00:00Z"),
+            pr("team/bots", stars=687, when="2026-11-08T00:00:00Z"),
+            pr("team/bots", stars=687, when="2026-11-10T00:00:00Z"),
+            pr("team/bots", state="CLOSED", stars=687, title="refused"),
+            pr("friend/class", stars=2, title="class project"),
+            pr("team/open", state="OPEN", stars=50, when="2026-11-15T00:00:00Z"),
+        ]
+        out = render.render_open_source(data, TZ, min_stars=10)
+        self.assertIn("**3 merged PRs** into **2 projects**", out)
+        self.assertIn("**31.1k★** combined", out)
+        self.assertNotIn("refused", out)
+        self.assertNotIn("class project", out)
+        self.assertIn("fix: PDF \\| reports", out)
+        self.assertIn("🟡 Open", out)
+        self.assertLess(out.index("team/open"), out.index("big/seo"))
+        self.assertIn("-user%3Ame", out)
+
+    def test_open_source_max_rows_and_empty(self):
+        data = sample_data()
+        data.external_prs = [pr(f"o/r{i}") for i in range(10)]
+        out = render.render_open_source(data, TZ, max_rows=4)
+        self.assertEqual(out.count("| [o/r"), 4)
+        self.assertIn("**10 merged PRs**", out)
+        data.external_prs = [pr("o/r", state="CLOSED")]
+        self.assertIn("No open-source", render.render_open_source(data, TZ))
+        self.assertIn("| [o/r]", render.render_open_source(data, TZ, include_closed=True))
+
     def test_updated_stamp_in_local_time(self):
         out = render.render_updated(NOW, TZ, None, None)
         self.assertIn("Nov 1, 2026, 9:37 AM EST", out)
@@ -175,14 +231,16 @@ class BuildSectionsTests(unittest.TestCase):
 
     def test_all_sections_when_everything_succeeds(self):
         sections, warnings = build_sections(sample_data(), self.CONFIG, NOW)
-        self.assertEqual(set(sections), {"PROFILE-STATS", "LANGUAGES", "FEATURED", "ACTIVITY", "LAST-UPDATED"})
+        self.assertEqual(
+            set(sections), {"PROFILE-STATS", "LANGUAGES", "FEATURED", "ACTIVITY", "OPEN-SOURCE", "LAST-UPDATED"}
+        )
         self.assertEqual(warnings, [])
 
     def test_failed_source_keeps_dependent_sections_and_timestamp(self):
         data = sample_data()
         data.errors["search"] = "boom"
         sections, warnings = build_sections(data, self.CONFIG, NOW)
-        self.assertEqual(set(sections), {"LANGUAGES", "FEATURED"})
+        self.assertEqual(set(sections), {"LANGUAGES", "FEATURED", "ACTIVITY"})
         self.assertTrue(any("search" in w for w in warnings))
 
 

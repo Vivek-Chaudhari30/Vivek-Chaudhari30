@@ -23,6 +23,15 @@ recent_repos = 5
 # Repositories never listed under Recent Activity.
 exclude_repos = ["olake-postgres-iceberg-spark"]
 
+[open_source]
+# Pull requests to other people's public repositories, newest first.
+# Only merged and still-open PRs are shown (closed-unmerged ones are hidden
+# unless include_closed = true). min_stars filters out class/hackathon repos.
+min_stars = 10
+max_rows = 6
+include_closed = false
+exclude_repos = []
+
 # Featured projects, in display order. Descriptions are hand-written from each
 # repository's README; language, stars and last push date come from the API.
 # A repository that is missing or not public is skipped with a warning.

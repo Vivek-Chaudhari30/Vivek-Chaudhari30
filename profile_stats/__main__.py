@@ -44,6 +44,7 @@ def build_sections(data: ProfileData, config: dict, now: datetime) -> tuple[dict
     tz = ZoneInfo(config.get("timezone", "UTC"))
     lang_cfg = config.get("languages", {})
     activity_cfg = config.get("activity", {})
+    oss_cfg = config.get("open_source", {})
     failed = set(data.errors)
     warnings = [f"Could not fetch {name}: {err}" for name, err in data.errors.items()]
     sections: dict[str, str] = {}
@@ -64,9 +65,18 @@ def build_sections(data: ProfileData, config: dict, now: datetime) -> tuple[dict
         featured, featured_warnings = render.render_featured(data, config.get("featured", []), tz)
         sections["FEATURED"] = featured
         warnings += featured_warnings
-    if needs("repos", "search"):
+    if needs("repos"):
         sections["ACTIVITY"] = render.render_activity(
             data, activity_cfg.get("recent_repos", 5), tz, activity_cfg.get("exclude_repos", [])
+        )
+    if needs("search"):
+        sections["OPEN-SOURCE"] = render.render_open_source(
+            data,
+            tz,
+            min_stars=oss_cfg.get("min_stars", 0),
+            max_rows=oss_cfg.get("max_rows", 6),
+            exclude_repos=oss_cfg.get("exclude_repos", []),
+            include_closed=oss_cfg.get("include_closed", False),
         )
     if not failed:
         server = os.getenv("GITHUB_SERVER_URL", "https://github.com")

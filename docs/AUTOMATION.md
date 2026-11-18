@@ -8,16 +8,16 @@ Python generator refreshes from the GitHub GraphQL API.
 | Path | Purpose |
 |---|---|
 | `README.md` | The profile. Edit it freely **outside** the `<!-- NAME:START -->` / `<!-- NAME:END -->` markers. |
-| `profile.toml` | Username, timezone, featured projects, language exclusions. |
+| `profile.toml` | Username, timezone, featured projects, language exclusions, open-source filters. |
 | `profile_stats/github_api.py` | GraphQL client: retries, rate-limit back-off, pagination. |
 | `profile_stats/stats.py` | Queries and public-only metric collection. |
-| `profile_stats/render.py` | Markdown for each section (stats, language bars, featured projects, activity, timestamp). |
+| `profile_stats/render.py` | Markdown for each section (open source, stats, language bars, featured projects, activity, timestamp). |
 | `profile_stats/readme.py` | Replaces content between markers and nothing else. |
 | `profile_stats/__main__.py` | CLI entry point (`python -m profile_stats`). |
 | `tests/` | Offline unit tests (no network, no token). |
 | `.github/workflows/update-profile.yml` | Runs the tests and the generator, then commits the result. |
 
-Generated blocks: `FEATURED`, `PROFILE-STATS`, `LANGUAGES`, `ACTIVITY`, `LAST-UPDATED`.
+Generated blocks: `OPEN-SOURCE`, `FEATURED`, `PROFILE-STATS`, `LANGUAGES`, `ACTIVITY`, `LAST-UPDATED`.
 Move a block anywhere in the README by moving its marker pair. Don't delete or
 duplicate a marker: the generator then exits with an error and changes nothing.
 
@@ -36,6 +36,7 @@ contributions are filtered out even when the token can see them.
 | Issues opened | All-time count from search `author:<you> is:issue is:public`. |
 | Code reviews | Public PR review contributions in the last 12 months. |
 | Contributed to | GitHub's `repositoriesContributedTo` (public, excluding your own repos), which covers roughly the last year. |
+| Open source | Your public PRs to repositories you don't own (search `author:<you> is:pr is:public -user:<you>`, latest 50). Only merged and open PRs to repos with at least `open_source.min_stars` stars are listed; "combined stars" sums the distinct projects with a merged PR. |
 | Languages | Bytes per language from GitHub's linguist across original public repos, minus the exclusions in `profile.toml`. |
 
 Commit counts follow GitHub's contribution rules: commits authored by your

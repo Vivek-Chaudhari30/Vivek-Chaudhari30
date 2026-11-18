@@ -4,21 +4,23 @@ Applied AI engineer and founder, building systems that help organizations rememb
 
 [LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/) · [GitHub](https://github.com/Vivek-Chaudhari30) · [X](https://x.com/@Chaudhar1Vivek)
 
----
+- **Founding team, Context AI** — the strategic-intelligence layer for organizations: memory systems, knowledge graphs, and the AI infrastructure behind them.
+- **Founder, Quantum AI Solutions** — LLM systems, multi-agent workflows, voice AI and automation for businesses and government organizations.
+- **UC Berkeley Engineering, Applied AI Program** (incoming, 2026) · B.Tech ICT, DA-IICT (in progress)
 
-## Summary
+**Stack:** Python · TypeScript · Swift · CUDA · PyTorch · LangGraph · FastAPI · Next.js · PostgreSQL · AWS · Docker
 
-Most companies run on open loops: decisions get made, context gets lost, and teams spend hours reconstructing why things happened. I build LLM-powered systems, AI agents, and organizational-memory infrastructure that close those loops. Founding team member at Context AI and founder of Quantum AI Solutions.
+## Open Source
 
-## Experience
+<!-- OPEN-SOURCE:START -->
+**3 merged PRs** into **2 projects** · **31.1k★** combined · [all pull requests →](https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30)
 
-**Founding Team — Context AI**
-- Building the strategic intelligence layer for organizations: capturing, preserving, and applying company knowledge, decision-making context, and institutional memory.
-- Working on memory systems, knowledge graphs, and the AI infrastructure behind them.
-
-**Founder — Quantum AI Solutions**
-- Run an applied AI company delivering LLM-powered systems, AI agents, voice AI, automation pipelines, and enterprise AI solutions for businesses and government organizations.
-- Design multi-agent workflows and enterprise-grade LLM applications, from architecture through deployment.
+| Project | Contribution | Status |
+|---|---|---|
+| [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) <sub>★ 30.4k</sub> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | ✅ Merged <sub>Nov 15, 2026</sub> |
+| [nuphos/nuphos](https://github.com/nuphos/nuphos) <sub>★ 687</sub> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | ✅ Merged <sub>Nov 11, 2026</sub> |
+| [nuphos/nuphos](https://github.com/nuphos/nuphos) <sub>★ 687</sub> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | ✅ Merged <sub>Nov 7, 2026</sub> |
+<!-- OPEN-SOURCE:END -->
 
 ## Featured Projects
 
@@ -30,34 +32,17 @@ Most companies run on open loops: decisions get made, context gets lost, and tea
 - **[Human Turn](https://github.com/Vivek-Chaudhari30/HumanTurn)** — Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you. <sub>TypeScript · updated Aug 2026</sub>
 <!-- FEATURED:END -->
 
-## Education
+<details>
+<summary><b>GitHub stats, languages and recent activity</b></summary>
 
-**UC Berkeley Engineering, Applied AI Program** — incoming, 2026
-
-**B.Tech, Information and Communication Technology — DA-IICT** (in progress)
-
-## Skills
-
-| Area | Tools |
-|---|---|
-| Languages | Python, TypeScript, JavaScript, Java, C++, CUDA, Swift |
-| AI and ML | PyTorch, OpenAI, Anthropic, LangGraph, LangChain, RAG systems, vector databases, multi-agent architectures |
-| Backend | Node.js, Express, FastAPI, Django, PostgreSQL, MongoDB |
-| Cloud and infrastructure | AWS, Azure, Google Cloud, Docker, GitHub Actions |
-| Frontend | React, Next.js, Angular |
-
-## Areas of Interest
-
-Agentic systems · Organizational memory and context · Knowledge graphs · Reinforcement learning · Distributed systems · Human-AI collaboration · Voice AI and conversational interfaces
-
-## GitHub Stats
+<br>
 
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 37 original public repos
-Commits, all-time        412   public, since 2023
-Commits, 2026            365   Jan 1 – Nov 17
-Commits, last 12 months  366   rolling window
+Commits, all-time        414   public, since 2023
+Commits, 2026            367   Jan 1 – Nov 17
+Commits, last 12 months  368   rolling window
 Pull requests             48   38 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
@@ -68,44 +53,51 @@ Followers                 13
 <sub>Public activity only. Commits follow GitHub's contribution rules (commits authored by this account on a repository's default branch); automated README refresh commits are made by github-actions[bot] and are not counted.</sub>
 <!-- PROFILE-STATS:END -->
 
-## Languages
-
 <!-- LANGUAGES:START -->
 ```text
-Python      ██████████▏░░░░░░░░░░░░░░   40.5%
-TypeScript  █████████▌░░░░░░░░░░░░░░░   38.0%
-Swift       █▍░░░░░░░░░░░░░░░░░░░░░░░    5.6%
+Python      ██████████▎░░░░░░░░░░░░░░   40.8%
+TypeScript  █████████▌░░░░░░░░░░░░░░░   37.8%
+Swift       █▍░░░░░░░░░░░░░░░░░░░░░░░    5.5%
 JavaScript  █▎░░░░░░░░░░░░░░░░░░░░░░░    5.1%
 CSS         ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.7%
-HTML        ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.3%
+HTML        ▊░░░░░░░░░░░░░░░░░░░░░░░░    3.2%
 Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.6%
 C++         ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.3%
-Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.0%
+Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    0.9%
 ```
 
 <sub>By bytes of code across 35 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
 <!-- LANGUAGES:END -->
 
-## Recent Activity
-
-<!-- ACTIVITY:START -->
 **Recently pushed**
 
-- [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 16, 2026</sub>
+<!-- ACTIVITY:START -->
+- [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 17, 2026</sub>
 - [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Nov 15, 2026</sub>
 - [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Nov 12, 2026</sub>
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
 - [RL-Reasoning-team18](https://github.com/Vivek-Chaudhari30/RL-Reasoning-team18) <sub>· Oct 20, 2026</sub>
-
-**Latest pull requests to other projects**
-
-- [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) in `AgriciDaniel/claude-seo` <sub>merged · Nov 12, 2026</sub>
-- [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) in `nuphos/nuphos` <sub>merged · Nov 10, 2026</sub>
-- [Bank/vivek sim](https://github.com/zaccytoymas/Sundai-hack/pull/1) in `zaccytoymas/Sundai-hack` <sub>merged · Nov 8, 2026</sub>
 <!-- ACTIVITY:END -->
 
----
+</details>
+
+<details>
+<summary><b>Full skill set and interests</b></summary>
+
+<br>
+
+| Area | Tools |
+|---|---|
+| Languages | Python, TypeScript, JavaScript, Java, C++, CUDA, Swift |
+| AI and ML | PyTorch, OpenAI, Anthropic, LangGraph, LangChain, RAG systems, vector databases, multi-agent architectures |
+| Backend | Node.js, Express, FastAPI, Django, PostgreSQL, MongoDB |
+| Cloud and infrastructure | AWS, Azure, Google Cloud, Docker, GitHub Actions |
+| Frontend | React, Next.js, Angular |
+
+**Interests:** agentic systems · organizational memory and context · knowledge graphs · reinforcement learning · distributed systems · human-AI collaboration · voice AI
+
+</details>
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 17, 2026, 9:39 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44105426724">run log</a></sub>
+<sub>Stats refresh automatically via GitHub Actions. Last successful refresh: <b>Nov 17, 2026, 10:15 PM EST</b></sub>
 <!-- LAST-UPDATED:END -->

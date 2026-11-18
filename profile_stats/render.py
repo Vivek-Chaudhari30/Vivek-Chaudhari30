@@ -3,13 +3,15 @@
 from __future__ import annotations
 
 import html
-from datetime import datetime
+from datetime import datetime, timezone
+from urllib.parse import quote_plus
 from zoneinfo import ZoneInfo
 
-from .stats import ProfileData, Repo
+from .stats import ExternalPR, ProfileData, Repo
 
 BAR_WIDTH = 25
 _PARTIAL_BLOCKS = " ▏▎▍▌▋▊▉"
+_EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
 
 
 def percent_bar(percent: float, width: int = BAR_WIDTH) -> str:
@@ -151,21 +153,87 @@ def render_activity(data: ProfileData, recent: int, tz: ZoneInfo, exclude_repos:
     skip = {name.lower() for name in exclude_repos}
     repos = [r for r in original_repos(data) if r.pushed_at and r.name.lower() not in skip]
     repos.sort(key=lambda r: r.pushed_at, reverse=True)
-    lines = ["**Recently pushed**", ""]
+    lines = []
     for repo in repos[:recent]:
         description = f" — {html.escape(_truncate(repo.description))}" if repo.description else ""
         lines.append(f"- [{repo.name}]({repo.url}){description} <sub>· {fmt_date(repo.pushed_at, tz)}</sub>")
-    if not repos:
-        lines.append("_No public repositories yet._")
+    return "\n".join(lines) or "_No public repositories yet._"
 
-    if data.external_prs:
-        lines += ["", "**Latest pull requests to other projects**", ""]
-        for pr in data.external_prs:
-            state = pr.state.lower()
-            when = f" · {fmt_date(pr.created_at, tz)}" if pr.created_at else ""
-            lines.append(
-                f"- [{html.escape(_truncate(pr.title, 70))}]({pr.url}) in `{pr.repo}` <sub>{state}{when}</sub>"
-            )
+
+def fmt_stars(value: int) -> str:
+    """Compact star count: 687 -> 687, 30426 -> 30.4k."""
+    if value < 1000:
+        return str(value)
+    return f"{value / 1000:.1f}".rstrip("0").rstrip(".") + "k"
+
+
+def select_open_source(
+    prs: list[ExternalPR],
+    min_stars: int = 0,
+    exclude_repos: list[str] = (),
+    include_closed: bool = False,
+) -> list[ExternalPR]:
+    """PRs worth showcasing: public projects above a star floor, merged or still open."""
+    skip = {name.lower() for name in exclude_repos}
+    keep = {"MERGED", "OPEN"} | ({"CLOSED"} if include_closed else set())
+    chosen = [
+        pr
+        for pr in prs
+        if pr.state in keep and pr.repo_stars >= min_stars and pr.repo.lower() not in skip
+    ]
+    return sorted(chosen, key=lambda pr: pr.merged_at or pr.created_at or _EPOCH, reverse=True)
+
+
+def _cell(text: str) -> str:
+    return html.escape(text).replace("|", "\\|")
+
+
+def render_open_source(
+    data: ProfileData,
+    tz: ZoneInfo,
+    min_stars: int = 0,
+    max_rows: int = 6,
+    exclude_repos: list[str] = (),
+    include_closed: bool = False,
+) -> str:
+    prs = select_open_source(data.external_prs or [], min_stars, exclude_repos, include_closed)
+    if not prs:
+        return "_No open-source contributions to show yet._"
+
+    merged = [pr for pr in prs if pr.state == "MERGED"]
+    merged_projects = {pr.repo: pr.repo_stars for pr in merged}
+    all_prs = (
+        "https://github.com/search?type=pullrequests&q="
+        + quote_plus(f"author:{data.login} is:pr is:public -user:{data.login}")
+    )
+    summary = []
+    if merged:
+        plural = "s" if len(merged) != 1 else ""
+        projects = "s" if len(merged_projects) != 1 else ""
+        summary.append(f"**{len(merged)} merged PR{plural}** into **{len(merged_projects)} project{projects}**")
+        stars = sum(merged_projects.values())
+        if stars:
+            summary.append(f"**{fmt_stars(stars)}★** combined")
+    summary.append(f"[all pull requests →]({all_prs})")
+
+    status_label = {"MERGED": "✅ Merged", "OPEN": "🟡 Open", "CLOSED": "Closed"}
+    lines = [
+        " · ".join(summary),
+        "",
+        "| Project | Contribution | Status |",
+        "|---|---|---|",
+    ]
+    for pr in prs[:max_rows]:
+        when = pr.merged_at or pr.created_at
+        stars = f" <sub>★ {fmt_stars(pr.repo_stars)}</sub>" if pr.repo_stars else ""
+        status = status_label.get(pr.state, pr.state.title())
+        if when:
+            status += f" <sub>{fmt_date(when, tz)}</sub>"
+        lines.append(
+            f"| [{_cell(pr.repo)}]({pr.repo_url}){stars} "
+            f"| [{_cell(_truncate(pr.title, 80))}]({pr.url}) "
+            f"| {status} |"
+        )
     return "\n".join(lines)
 
 

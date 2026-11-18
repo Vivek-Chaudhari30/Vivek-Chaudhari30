@@ -83,14 +83,15 @@ query($prs: String!, $merged: String!, $issues: String!, $external: String!) {
   prs: search(query: $prs, type: ISSUE, first: 1) { issueCount }
   merged: search(query: $merged, type: ISSUE, first: 1) { issueCount }
   issues: search(query: $issues, type: ISSUE, first: 1) { issueCount }
-  external: search(query: $external, type: ISSUE, first: 3) {
+  external: search(query: $external, type: ISSUE, first: 50) {
     nodes {
       ... on PullRequest {
         title
         url
         state
         createdAt
-        repository { nameWithOwner isPrivate }
+        mergedAt
+        repository { nameWithOwner url isPrivate stargazerCount }
       }
     }
   }
@@ -124,9 +125,12 @@ class Contributions:
 class ExternalPR:
     title: str
     url: str
-    state: str
+    state: str  # OPEN, CLOSED or MERGED
     repo: str
     created_at: datetime | None
+    merged_at: datetime | None = None
+    repo_url: str = ""
+    repo_stars: int = 0
 
 
 @dataclass
@@ -272,6 +276,9 @@ def fetch_search(client: GitHubClient, data: ProfileData) -> None:
                 state=node["state"],
                 repo=repo["nameWithOwner"],
                 created_at=parse_time(node.get("createdAt")),
+                merged_at=parse_time(node.get("mergedAt")),
+                repo_url=repo.get("url") or f"https://github.com/{repo['nameWithOwner']}",
+                repo_stars=repo.get("stargazerCount") or 0,
             )
         )
     data.external_prs = prs
