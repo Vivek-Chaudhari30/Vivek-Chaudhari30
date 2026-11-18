@@ -18,8 +18,8 @@ Applied AI engineer and founder, building systems that help organizations rememb
 | Project | Contribution | Status |
 |---|---|---|
 | [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="30.4k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="687 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="687 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="688 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="688 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
 
 <sub>[All my pull requests to other projects →](https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30)</sub>
 <!-- OPEN-SOURCE:END -->
@@ -42,9 +42,9 @@ Applied AI engineer and founder, building systems that help organizations rememb
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 37 original public repos
-Commits, all-time        415   public, since 2023
-Commits, 2026            368   Jan 1 – Nov 17
-Commits, last 12 months  369   rolling window
+Commits, all-time        416   public, since 2023
+Commits, 2026            369   Jan 1 – Nov 17
+Commits, last 12 months  370   rolling window
 Pull requests             48   38 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
@@ -101,5 +101,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 </details>
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via GitHub Actions. Last successful refresh: <b>Nov 17, 2026, 10:48 PM EST</b></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 17, 2026, 10:55 PM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44233720457">run log</a></sub>
 <!-- LAST-UPDATED:END -->
