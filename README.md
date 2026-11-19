@@ -19,8 +19,8 @@ Applied AI engineer and founder, building systems that help organizations rememb
 |---|---|---|
 | [**huggingface/lerobot**](https://github.com/huggingface/lerobot)<br><a href="https://github.com/huggingface/lerobot/stargazers"><img src="https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="29k stars"></a> | [fix(rl): store uint8 video frames as float in [0, 1] in the offline replay buff…](https://github.com/huggingface/lerobot/pull/5413) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 18, 2026</sub> |
 | [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="30.7k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="701 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="701 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="705 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="705 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
 
 <sub>[All my pull requests to other projects →](https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30)</sub>
 <!-- OPEN-SOURCE:END -->
@@ -42,15 +42,15 @@ Applied AI engineer and founder, building systems that help organizations rememb
 
 <!-- PROFILE-STATS:START -->
 ```text
-Stars earned               6   across 37 original public repos
-Commits, all-time        419   public, since 2023
-Commits, 2026            372   Jan 1 – Nov 18
-Commits, last 12 months  373   rolling window
+Stars earned               6   across 38 original public repos
+Commits, all-time        421   public, since 2023
+Commits, 2026            374   Jan 1 – Nov 19
+Commits, last 12 months  375   rolling window
 Pull requests             49   38 merged, all-time
 Issues opened              0   all-time
-Code reviews               1   last 12 months
+Code reviews               2   last 12 months
 Contributed to             4   other people's public repos (recent)
-Followers                 13
+Followers                 14
 ```
 
 <sub>Public activity only. Commits follow GitHub's contribution rules (commits authored by this account on a repository's default branch); automated README refresh commits are made by github-actions[bot] and are not counted.</sub>
@@ -69,17 +69,17 @@ C++         ▍░░░░░░░░░░░░░░░░░░░░░�
 Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    0.9%
 ```
 
-<sub>By bytes of code across 35 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
+<sub>By bytes of code across 36 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
 <!-- LANGUAGES:END -->
 
 **Recently pushed**
 
 <!-- ACTIVITY:START -->
+- [RoboCurate-Bench](https://github.com/Vivek-Chaudhari30/RoboCurate-Bench) <sub>· Nov 19, 2026</sub>
 - [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 17, 2026</sub>
 - [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Nov 15, 2026</sub>
 - [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Nov 12, 2026</sub>
 - [Blue-Envelope](https://github.com/Vivek-Chaudhari30/Blue-Envelope) <sub>· Oct 24, 2026</sub>
-- [RL-Reasoning-team18](https://github.com/Vivek-Chaudhari30/RL-Reasoning-team18) <sub>· Oct 20, 2026</sub>
 <!-- ACTIVITY:END -->
 
 </details>
@@ -102,5 +102,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 </details>
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 18, 2026, 7:01 PM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44425574809">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 19, 2026, 1:13 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44470604883">run log</a></sub>
 <!-- LAST-UPDATED:END -->
