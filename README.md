@@ -43,9 +43,9 @@ Applied AI engineer and founder, building systems that help organizations rememb
 <!-- PROFILE-STATS:START -->
 ```text
 Stars earned               6   across 37 original public repos
-Commits, all-time        418   public, since 2023
-Commits, 2026            371   Jan 1 – Nov 18
-Commits, last 12 months  372   rolling window
+Commits, all-time        419   public, since 2023
+Commits, 2026            372   Jan 1 – Nov 18
+Commits, last 12 months  373   rolling window
 Pull requests             49   38 merged, all-time
 Issues opened              0   all-time
 Code reviews               1   last 12 months
@@ -102,5 +102,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 </details>
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via GitHub Actions. Last successful refresh: <b>Nov 18, 2026, 7:00 PM EST</b></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 18, 2026, 7:01 PM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44425574809">run log</a></sub>
 <!-- LAST-UPDATED:END -->
