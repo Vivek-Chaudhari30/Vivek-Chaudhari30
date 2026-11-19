@@ -4,7 +4,7 @@ Applied AI engineer and founder, building systems that help organizations rememb
 
 [LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/) · [GitHub](https://github.com/Vivek-Chaudhari30) · [X](https://x.com/@Chaudhar1Vivek)
 
-- **Founding team, Context AI** — the strategic-intelligence layer for organizations: memory systems, knowledge graphs, and the AI infrastructure behind them.
+- **Founding team, [Context AI](https://thecontextlabs.com)** — the strategic-intelligence layer for organizations: memory systems, knowledge graphs, and the AI infrastructure behind them.
 - **Founder, Quantum AI Solutions** — LLM systems, multi-agent workflows, voice AI and automation for businesses and government organizations.
 - **M.S. Computer Science, Northeastern University (NEU)** · previously B.Tech ICT, DA-IICT
 
