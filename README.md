@@ -13,14 +13,14 @@ Applied AI engineer and founder, building systems that help organizations rememb
 ## Open Source
 
 <!-- OPEN-SOURCE:START -->
-<a href="https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30"><img src="assets/open-source-stars.svg" alt="31.8k combined stars across 2 open-source projects with 3 merged pull requests" width="100%"></a>
+<a href="https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30"><img src="assets/open-source-stars.svg" alt="32.1k combined stars across 2 open-source projects with 3 merged pull requests" width="100%"></a>
 
 | Project | Contribution | Status |
 |---|---|---|
 | [**huggingface/lerobot**](https://github.com/huggingface/lerobot)<br><a href="https://github.com/huggingface/lerobot/stargazers"><img src="https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="29k stars"></a> | [fix(rl): store uint8 video frames as float in [0, 1] in the offline replay buff…](https://github.com/huggingface/lerobot/pull/5413) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 18, 2026</sub> |
-| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="31.1k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="753 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="753 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
+| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="31.3k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="755 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="755 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
 
 <sub>[All my pull requests to other projects →](https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30)</sub>
 <!-- OPEN-SOURCE:END -->
@@ -44,13 +44,13 @@ Applied AI engineer and founder, building systems that help organizations rememb
 ```text
 Stars earned               6   across 38 original public repos
 Commits, all-time        470   public, since 2023
-Commits, 2026            423   Jan 1 – Nov 20
+Commits, 2026            423   Jan 1 – Nov 21
 Commits, last 12 months  424   rolling window
 Pull requests             49   38 merged, all-time
 Issues opened              0   all-time
 Code reviews               2   last 12 months
 Contributed to             4   other people's public repos (recent)
-Followers                 15
+Followers                 17
 ```
 
 <sub>Public activity only. Commits follow GitHub's contribution rules (commits authored by this account on a repository's default branch); automated README refresh commits are made by github-actions[bot] and are not counted.</sub>
@@ -102,5 +102,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 </details>
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 20, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44755402729">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 21, 2026, 9:39 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/44915030474">run log</a></sub>
 <!-- LAST-UPDATED:END -->
