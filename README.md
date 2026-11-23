@@ -13,14 +13,14 @@ Applied AI engineer and founder, building systems that help organizations rememb
 ## Open Source
 
 <!-- OPEN-SOURCE:START -->
-<a href="https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30"><img src="assets/open-source-stars.svg" alt="32.3k combined stars across 2 open-source projects with 3 merged pull requests" width="100%"></a>
+<a href="https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30"><img src="assets/open-source-stars.svg" alt="32.6k combined stars across 2 open-source projects with 3 merged pull requests" width="100%"></a>
 
 | Project | Contribution | Status |
 |---|---|---|
-| [**huggingface/lerobot**](https://github.com/huggingface/lerobot)<br><a href="https://github.com/huggingface/lerobot/stargazers"><img src="https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="29k stars"></a> | [fix(rl): store uint8 video frames as float in [0, 1] in the offline replay buff…](https://github.com/huggingface/lerobot/pull/5413) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 18, 2026</sub> |
-| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="31.5k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="759 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="759 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
+| [**huggingface/lerobot**](https://github.com/huggingface/lerobot)<br><a href="https://github.com/huggingface/lerobot/stargazers"><img src="https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="29.1k stars"></a> | [fix(rl): store uint8 video frames as float in [0, 1] in the offline replay buff…](https://github.com/huggingface/lerobot/pull/5413) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 18, 2026</sub> |
+| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="31.8k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="768 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="768 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
 
 <sub>[All my pull requests to other projects →](https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30)</sub>
 <!-- OPEN-SOURCE:END -->
@@ -42,11 +42,11 @@ Applied AI engineer and founder, building systems that help organizations rememb
 
 <!-- PROFILE-STATS:START -->
 ```text
-Stars earned               6   across 39 original public repos
-Commits, all-time        498   public, since 2023
-Commits, 2026            451   Jan 1 – Nov 22
-Commits, last 12 months  452   rolling window
-Pull requests             49   38 merged, all-time
+Stars earned               7   across 40 original public repos
+Commits, all-time        510   public, since 2023
+Commits, 2026            463   Jan 1 – Nov 23
+Commits, last 12 months  464   rolling window
+Pull requests             53   42 merged, all-time
 Issues opened              0   all-time
 Code reviews               2   last 12 months
 Contributed to             4   other people's public repos (recent)
@@ -58,28 +58,28 @@ Followers                 16
 
 <!-- LANGUAGES:START -->
 ```text
-Python      ██████████▊░░░░░░░░░░░░░░   43.1%
-TypeScript  █████████▉░░░░░░░░░░░░░░░   39.5%
-Swift       █░░░░░░░░░░░░░░░░░░░░░░░░    4.0%
-CSS         █░░░░░░░░░░░░░░░░░░░░░░░░    3.8%
-JavaScript  █░░░░░░░░░░░░░░░░░░░░░░░░    3.8%
-HTML        ▋░░░░░░░░░░░░░░░░░░░░░░░░    2.5%
-Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.5%
-C++         ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.2%
-Other       ▎░░░░░░░░░░░░░░░░░░░░░░░░    0.8%
+TypeScript  ██████████▋░░░░░░░░░░░░░░   42.3%
+Python      ██████████▏░░░░░░░░░░░░░░   40.3%
+Swift       █▏░░░░░░░░░░░░░░░░░░░░░░░    4.5%
+CSS         ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.7%
+JavaScript  ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.5%
+HTML        ▋░░░░░░░░░░░░░░░░░░░░░░░░    2.4%
+Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.4%
+C++         ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.1%
+Other       ▏░░░░░░░░░░░░░░░░░░░░░░░░    0.7%
 ```
 
-<sub>By bytes of code across 37 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
+<sub>By bytes of code across 38 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
 <!-- LANGUAGES:END -->
 
 **Recently pushed**
 
 <!-- ACTIVITY:START -->
+- [face-analyzer](https://github.com/Vivek-Chaudhari30/face-analyzer) <sub>· Nov 22, 2026</sub>
 - [Boston-Surfers](https://github.com/Vivek-Chaudhari30/Boston-Surfers) <sub>· Nov 22, 2026</sub>
 - [RoboCurate-Bench](https://github.com/Vivek-Chaudhari30/RoboCurate-Bench) — Does cleaning your robot data actually help? A pre-registered benchmark that tests robot-… <sub>· Nov 20, 2026</sub>
 - [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 17, 2026</sub>
 - [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Nov 15, 2026</sub>
-- [Paged_Serve](https://github.com/Vivek-Chaudhari30/Paged_Serve) — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching an… <sub>· Nov 12, 2026</sub>
 <!-- ACTIVITY:END -->
 
 </details>
@@ -102,5 +102,5 @@ Other       ▎░░░░░░░░░░░░░░░░░░░░░�
 </details>
 
 <!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 22, 2026, 9:38 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/45033915813">run log</a></sub>
+<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 23, 2026, 9:39 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/45196489686">run log</a></sub>
 <!-- LAST-UPDATED:END -->
