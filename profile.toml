@@ -38,25 +38,15 @@ card = "assets/open-source-stars.svg"
 # repository's README; language, stars and last push date come from the API.
 # A repository that is missing or not public is skipped with a warning.
 [[featured]]
-repo = "Paged_Serve"
-name = "PagedServe"
-description = "From-scratch LLM inference server: paged KV cache, continuous batching, block-aligned prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API."
-
-[[featured]]
 repo = "GRPO-Zero"
-description = "Hand-written GRPO for verifiable math reasoning. LoRA-trained Qwen2.5-0.5B from 42.76% to 47.16% pass@1 on the full GSM8K test set."
+description = "From-scratch GRPO (RLVR) post-training of Qwen2.5 on GSM8K: hand-written rollout, group-relative advantages, clipped objective, KL to a LoRA-disabled reference, 53 unit tests. Results: TODO (baseline → trained pass@1)."
 
 [[featured]]
 repo = "my_majoor"
 name = "Majoor"
-description = "Voice-first macOS menu-bar assistant. Hold Ctrl+Option, speak, and it transcribes, picks an action and gets it done."
+description = "Voice-first macOS menu-bar assistant, written in Swift."
 
 [[featured]]
-repo = "Project_Nexus"
-name = "Project Nexus"
-description = "Multi-agent orchestration that plans goals into a DAG, routes sub-tasks across LLMs, executes code in a sandbox and reflects until quality passes."
-
-[[featured]]
-repo = "HumanTurn"
-name = "Human Turn"
-description = "Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you."
+repo = "Paged_Serve"
+name = "PagedServe"
+description = "From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API."

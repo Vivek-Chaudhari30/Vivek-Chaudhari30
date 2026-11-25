@@ -133,6 +133,13 @@ class ReplaceBlockTests(unittest.TestCase):
         with self.assertRaises(MarkerError):
             replace_block(self.TEXT * 2, "X", "c")
 
+    def test_optional_block_absent_is_left_alone(self):
+        self.assertEqual(replace_block("no markers here", "X", "c", optional=True), "no markers here")
+        with self.assertRaises(MarkerError):
+            replace_block(self.TEXT * 2, "X", "c", optional=True)
+        with self.assertRaises(MarkerError):
+            replace_block("only <!-- X:START --> here", "X", "c", optional=True)
+
 
 class RenderTests(unittest.TestCase):
     def test_languages_exclusions_and_percentages(self):

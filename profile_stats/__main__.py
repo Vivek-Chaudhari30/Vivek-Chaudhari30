@@ -5,6 +5,8 @@
 Each section is rewritten only when every data source it needs was fetched
 successfully; otherwise its previous content is kept and a warning is printed.
 The "last refresh" stamp is only advanced when all sections succeed.
+A section whose markers are not in the README is skipped, so deleting a
+section's markers removes it from the profile.
 Exit codes: 0 = done (possibly with warnings), 1 = nothing could be refreshed
 or the README is malformed, 2 = --check found the README out of date.
 """
@@ -130,7 +132,7 @@ def main(argv: list[str] | None = None) -> int:
     updated = original
     try:
         for name, content in sections.items():
-            updated = replace_block(updated, name, content)
+            updated = replace_block(updated, name, content, optional=True)
     except MarkerError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

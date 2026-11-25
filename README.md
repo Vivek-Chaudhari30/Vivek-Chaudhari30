@@ -1,108 +1,44 @@
 # Vivek Chaudhari
 
-Applied AI engineer and founder, building systems that help organizations remember, reason, and decide.
+I build LLM post-training systems from scratch and ship AI products.
 
-[LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/) · [GitHub](https://github.com/Vivek-Chaudhari30) · [X](https://x.com/@Chaudhar1Vivek)
+## About
 
-- **Founding team, [Context AI](https://thecontextlabs.com)** — the strategic-intelligence layer for organizations: memory systems, knowledge graphs, and the AI infrastructure behind them.
-- **Founder, Quantum AI Solutions** — LLM systems, multi-agent workflows, voice AI and automation for businesses and government organizations.
-- **M.S. Computer Science, Northeastern University (NEU)** · previously B.Tech ICT, DA-IICT
+I'm an MS Computer Science student at Northeastern University (Khoury College) in Boston, graduating in 2028. I'm a Forward Deployed Engineer on the founding team at [Context AI](https://thecontextlabs.com), and I founded Quantum AI Solutions, an applied-AI studio that builds LLM systems, agents and voice AI for businesses. Before Northeastern I did a B.Tech in ICT at DA-IICT.
 
-**Stack:** Python · TypeScript · Swift · CUDA · PyTorch · LangGraph · FastAPI · Next.js · PostgreSQL · AWS · Docker
+Looking for Summer 2027 internships in ML / LLM engineering (Bay Area or remote).
 
-## Open Source
+## Featured work
+
+<!-- FEATURED:START -->
+- **[GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero)** — From-scratch GRPO (RLVR) post-training of Qwen2.5 on GSM8K: hand-written rollout, group-relative advantages, clipped objective, KL to a LoRA-disabled reference, 53 unit tests. Results: TODO (baseline → trained pass@1). <sub>Python · updated Nov 2026</sub>
+- **[Majoor](https://github.com/Vivek-Chaudhari30/my_majoor)** — Voice-first macOS menu-bar assistant, written in Swift. <sub>Swift · ★ 1 · updated Jun 2026</sub>
+- **[PagedServe](https://github.com/Vivek-Chaudhari30/Paged_Serve)** — From-scratch LLM inference server: paged KV cache, continuous batching, prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API. <sub>Python · updated Nov 2026</sub>
+<!-- FEATURED:END -->
+
+## Open source
 
 <!-- OPEN-SOURCE:START -->
-<a href="https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30"><img src="assets/open-source-stars.svg" alt="32.9k combined stars across 2 open-source projects with 3 merged pull requests" width="100%"></a>
+<a href="https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30"><img src="assets/open-source-stars.svg" alt="33k combined stars across 2 open-source projects with 3 merged pull requests" width="100%"></a>
 
 | Project | Contribution | Status |
 |---|---|---|
-| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="32.1k stars"></a> | [fix(audit): compute the SEO Health Score in a script](https://github.com/AgriciDaniel/claude-seo/pull/526) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 23, 2026</sub> |
-| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="32.1k stars"></a> | [fix(images): report exact and near-duplicate images](https://github.com/AgriciDaniel/claude-seo/pull/525) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 23, 2026</sub> |
+| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="32.2k stars"></a> | [fix(audit): compute the SEO Health Score in a script](https://github.com/AgriciDaniel/claude-seo/pull/526) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 23, 2026</sub> |
+| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="32.2k stars"></a> | [fix(images): report exact and near-duplicate images](https://github.com/AgriciDaniel/claude-seo/pull/525) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 23, 2026</sub> |
 | [**huggingface/lerobot**](https://github.com/huggingface/lerobot)<br><a href="https://github.com/huggingface/lerobot/stargazers"><img src="https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="29.1k stars"></a> | [fix(rl): store uint8 video frames as float in [0, 1] in the offline replay buff…](https://github.com/huggingface/lerobot/pull/5413) | <img src="https://img.shields.io/badge/open-238636?style=flat-square&logo=git&logoColor=white" alt="open"><br><sub>Nov 18, 2026</sub> |
-| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="32.1k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="780 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
-| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="780 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
+| [**AgriciDaniel/claude-seo**](https://github.com/AgriciDaniel/claude-seo)<br><a href="https://github.com/AgriciDaniel/claude-seo/stargazers"><img src="https://img.shields.io/github/stars/AgriciDaniel/claude-seo?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="32.2k stars"></a> | [fix: PDF reports on macOS, clearer errors, canonical loop detection](https://github.com/AgriciDaniel/claude-seo/pull/457) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 15, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="787 stars"></a> | [fix(ios): answer a refused Stop with an alert](https://github.com/nuphos/nuphos/pull/2029) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 11, 2026</sub> |
+| [**nuphos/nuphos**](https://github.com/nuphos/nuphos)<br><a href="https://github.com/nuphos/nuphos/stargazers"><img src="https://img.shields.io/github/stars/nuphos/nuphos?style=flat-square&logo=github&label=%E2%98%85&color=f5c518&labelColor=24292f" alt="787 stars"></a> | [fix(ios): reach the newest row on the first Scroll to latest tap](https://github.com/nuphos/nuphos/pull/1808) | <img src="https://img.shields.io/badge/merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="merged"><br><sub>Nov 7, 2026</sub> |
 
 <sub>[All my pull requests to other projects →](https://github.com/search?type=pullrequests&q=author%3AVivek-Chaudhari30+is%3Apr+is%3Apublic+-user%3AVivek-Chaudhari30)</sub>
 <!-- OPEN-SOURCE:END -->
 
-## Featured Projects
+## Focus
 
-<!-- FEATURED:START -->
-- **[PagedServe](https://github.com/Vivek-Chaudhari30/Paged_Serve)** — From-scratch LLM inference server: paged KV cache, continuous batching, block-aligned prefix caching, a custom CUDA paged-attention kernel and an OpenAI-compatible API. <sub>Python · updated Nov 2026</sub>
-- **[GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero)** — Hand-written GRPO for verifiable math reasoning. LoRA-trained Qwen2.5-0.5B from 42.76% to 47.16% pass@1 on the full GSM8K test set. <sub>Python · updated Nov 2026</sub>
-- **[Majoor](https://github.com/Vivek-Chaudhari30/my_majoor)** — Voice-first macOS menu-bar assistant. Hold Ctrl+Option, speak, and it transcribes, picks an action and gets it done. <sub>Swift · ★ 1 · updated Jun 2026</sub>
-- **[Project Nexus](https://github.com/Vivek-Chaudhari30/Project_Nexus)** — Multi-agent orchestration that plans goals into a DAG, routes sub-tasks across LLMs, executes code in a sandbox and reflects until quality passes. <sub>Python · updated Apr 2026</sub>
-- **[Human Turn](https://github.com/Vivek-Chaudhari30/HumanTurn)** — Event-driven attention bridge between coding agents on a Mac and your iPhone: shields distractions while agents work, hands control back when they need you. <sub>TypeScript · updated Aug 2026</sub>
-<!-- FEATURED:END -->
+LLM post-training & RL · AI agents · Voice AI
 
-<details>
-<summary><b>GitHub stats, languages and recent activity</b></summary>
+**Stack:** Python, TypeScript, JavaScript, Swift, C++, CUDA, Java, PyTorch, LangGraph, LangChain, FastAPI, Django, Node.js, Express, Next.js, React, Angular, PostgreSQL, MongoDB, AWS, Azure, GCP, Docker, GitHub Actions
 
-<br>
+## Contact
 
-<!-- PROFILE-STATS:START -->
-```text
-Stars earned               7   across 40 original public repos
-Commits, all-time        510   public, since 2023
-Commits, 2026            463   Jan 1 – Nov 24
-Commits, last 12 months  464   rolling window
-Pull requests             55   42 merged, all-time
-Issues opened              0   all-time
-Code reviews               2   last 12 months
-Contributed to             4   other people's public repos (recent)
-Followers                 16
-```
-
-<sub>Public activity only. Commits follow GitHub's contribution rules (commits authored by this account on a repository's default branch); automated README refresh commits are made by github-actions[bot] and are not counted.</sub>
-<!-- PROFILE-STATS:END -->
-
-<!-- LANGUAGES:START -->
-```text
-TypeScript  ██████████▋░░░░░░░░░░░░░░   42.3%
-Python      ██████████▏░░░░░░░░░░░░░░   40.3%
-Swift       █▏░░░░░░░░░░░░░░░░░░░░░░░    4.5%
-CSS         ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.7%
-JavaScript  ▉░░░░░░░░░░░░░░░░░░░░░░░░    3.5%
-HTML        ▋░░░░░░░░░░░░░░░░░░░░░░░░    2.4%
-Shell       ▍░░░░░░░░░░░░░░░░░░░░░░░░    1.4%
-C++         ▎░░░░░░░░░░░░░░░░░░░░░░░░    1.1%
-Other       ▏░░░░░░░░░░░░░░░░░░░░░░░░    0.7%
-```
-
-<sub>By bytes of code across 38 original public repositories. Excludes Corporatify and Ghostwire (committed virtualenvs) and Jupyter Notebook output.</sub>
-<!-- LANGUAGES:END -->
-
-**Recently pushed**
-
-<!-- ACTIVITY:START -->
-- [face-analyzer](https://github.com/Vivek-Chaudhari30/face-analyzer) <sub>· Nov 22, 2026</sub>
-- [Boston-Surfers](https://github.com/Vivek-Chaudhari30/Boston-Surfers) <sub>· Nov 22, 2026</sub>
-- [RoboCurate-Bench](https://github.com/Vivek-Chaudhari30/RoboCurate-Bench) — Does cleaning your robot data actually help? A pre-registered benchmark that tests robot-… <sub>· Nov 20, 2026</sub>
-- [learn-to-remember](https://github.com/Vivek-Chaudhari30/learn-to-remember) — RL (hand-written GRPO + LoRA) that teaches a small LLM when to trust its notes and when t… <sub>· Nov 17, 2026</sub>
-- [GRPO-Zero](https://github.com/Vivek-Chaudhari30/GRPO-Zero) — From-scratch GRPO (Group Relative Policy Optimization) for verifiable math reasoning: tra… <sub>· Nov 15, 2026</sub>
-<!-- ACTIVITY:END -->
-
-</details>
-
-<details>
-<summary><b>Full skill set and interests</b></summary>
-
-<br>
-
-| Area | Tools |
-|---|---|
-| Languages | Python, TypeScript, JavaScript, Java, C++, CUDA, Swift |
-| AI and ML | PyTorch, OpenAI, Anthropic, LangGraph, LangChain, RAG systems, vector databases, multi-agent architectures |
-| Backend | Node.js, Express, FastAPI, Django, PostgreSQL, MongoDB |
-| Cloud and infrastructure | AWS, Azure, Google Cloud, Docker, GitHub Actions |
-| Frontend | React, Next.js, Angular |
-
-**Interests:** agentic systems · organizational memory and context · knowledge graphs · reinforcement learning · distributed systems · human-AI collaboration · voice AI
-
-</details>
-
-<!-- LAST-UPDATED:START -->
-<sub>Stats refresh automatically via <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/workflows/update-profile.yml">GitHub Actions</a>. Last successful refresh: <b>Nov 24, 2026, 9:39 AM EST</b> · <a href="https://github.com/Vivek-Chaudhari30/Vivek-Chaudhari30/actions/runs/45416472242">run log</a></sub>
-<!-- LAST-UPDATED:END -->
+[LinkedIn](https://www.linkedin.com/in/vivek-kirankumar-chaudhari/) · [X](https://x.com/Chaudhar1Vivek) · [vivek.cs.study@gmail.com](mailto:vivek.cs.study@gmail.com)

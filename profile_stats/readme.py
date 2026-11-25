@@ -13,10 +13,18 @@ def markers(name: str) -> tuple[str, str]:
     return f"<!-- {name}:START -->", f"<!-- {name}:END -->"
 
 
-def replace_block(text: str, name: str, content: str) -> str:
+def replace_block(text: str, name: str, content: str, optional: bool = False) -> str:
+    """Rewrite the block called ``name``.
+
+    With ``optional=True`` a README that has no such block is returned unchanged,
+    so a section can be removed from the README by deleting its markers.
+    Duplicated markers are always an error.
+    """
     start, end = markers(name)
     pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.DOTALL)
     matches = pattern.findall(text)
+    if optional and not matches and start not in text and end not in text:
+        return text
     if len(matches) != 1:
         raise MarkerError(f"Expected exactly one {start} … {end} block, found {len(matches)}")
     replacement = f"{start}\n{content.strip()}\n{end}"
